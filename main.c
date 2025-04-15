@@ -742,7 +742,7 @@ int main() {
 			else{putChar_atXY(6,row,col);} //else, remove one
 				}
 			}}*/
-		my_pause(10);
+		my_pause(11);
 	}
 	
 	
