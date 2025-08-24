@@ -6,13 +6,14 @@
 
 **Demo:**  [Watch on YouTube!](https://www.youtube.com/watch?v=HUmOf4YsyzI&ab_channel=NaviKumar)
 
+**My source code (.asm, .sv, .c files, etc.) is available for viewing upon request. Please reach out to me at avikumar2048@gmail.com if you are interested.**
+
 I designed and implemented a train track planning game on an FPGA circuit board (Nexys A7). The player’s goal is to connect a start point (S) and destination (D) by placing straight and curved track pieces. Once a valid path is built, a train animates along the track with sound and LED feedback. Movement on the 'game board' is controlled via the accelerometer built into the FPGA. 
 
 The game integrates multiple hardware components, discussed below. The program and software stack is written in MIPS assembly. All gameplay logic, path validation, and input/output handling run directly on the FPGA, with a full woring CPU that I implemented using System Verilog (and Vivado for program compilation). The CPU design includes I/O integration with VGA, accelerometer, buttons, LEDs, and audio output, using traditional memory mapping strategies for incorporation.
 
 For this final project, I made several custom additions to the provided procs.asm and template System Verilog files in order to incoporate the FGPA buttons. Specifically, I had to modify top.sv, memory_mapper.sv, and memIO.sv in order to incorpate the module. I additionally added a custom proc called "get_btns" to the procs.asm, to help me in my main assembly file.
 
-**My source code (.asm, .sv, .c files, etc.) is available for viewing upon request. Please reach out to me at avikumar2048@gmail.com if you are interested.**
 
 ## Features
 
